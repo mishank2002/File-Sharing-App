@@ -1,0 +1,66 @@
+[debug] [2024-04-03T19:27:57.679Z] ----------------------------------------------------------------------
+[debug] [2024-04-03T19:27:57.681Z] Command:       /usr/local/bin/firebase /Users/mishankkumar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2024-04-03T19:27:57.681Z] CLI Version:   13.6.0
+[debug] [2024-04-03T19:27:57.682Z] Platform:      darwin
+[debug] [2024-04-03T19:27:57.683Z] Node Version:  v18.5.0
+[debug] [2024-04-03T19:27:57.689Z] Time:          Thu Apr 04 2024 00:57:57 GMT+0530 (India Standard Time)
+[debug] [2024-04-03T19:27:57.689Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-03T19:27:57.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-03T19:27:57.846Z] > authorizing via signed-in user (mishank2002@gmail.com)
+[debug] [2024-04-03T19:27:57.847Z] [iam] checking project file-sharing-app-f616d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-04-03T19:27:57.852Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/file-sharing-app-f616d:testIamPermissions [none]
+[debug] [2024-04-03T19:27:57.853Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/file-sharing-app-f616d:testIamPermissions x-goog-quota-user=projects/file-sharing-app-f616d
+[debug] [2024-04-03T19:27:57.854Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/file-sharing-app-f616d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-03T19:27:59.603Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/file-sharing-app-f616d:testIamPermissions 200
+[debug] [2024-04-03T19:27:59.607Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/file-sharing-app-f616d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-04-03T19:27:59.610Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/file-sharing-app-f616d [none]
+[debug] [2024-04-03T19:28:00.834Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/file-sharing-app-f616d 200
+[debug] [2024-04-03T19:28:00.839Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/file-sharing-app-f616d {"projectId":"file-sharing-app-f616d","projectNumber":"942294062692","displayName":"File Sharing App","name":"projects/file-sharing-app-f616d","resources":{"hostingSite":"file-sharing-app-f616d","storageBucket":"file-sharing-app-f616d.appspot.com","locationId":"asia-east1"},"state":"ACTIVE","etag":"1_18f2b44d-2fa7-4c11-998e-23fb4522c53c"}
+[debug] [2024-04-03T19:28:04.689Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites pageToken=&pageSize=10
+[debug] [2024-04-03T19:28:06.112Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites 200
+[debug] [2024-04-03T19:28:06.115Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites {"sites":[{"name":"projects/file-sharing-app-f616d/sites/file-sharing-app-f616d","defaultUrl":"https://file-sharing-app-f616d.web.app","appId":"1:942294062692:web:49527fe831cfa42fb5b171","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-03T19:28:06.117Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:942294062692:web:49527fe831cfa42fb5b171/config [none]
+[debug] [2024-04-03T19:28:07.530Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:942294062692:web:49527fe831cfa42fb5b171/config 200
+[debug] [2024-04-03T19:28:07.536Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:942294062692:web:49527fe831cfa42fb5b171/config {"projectId":"file-sharing-app-f616d","appId":"1:942294062692:web:49527fe831cfa42fb5b171","storageBucket":"file-sharing-app-f616d.appspot.com","locationId":"asia-east1","apiKey":"AIzaSyBUy3ZSYcTJNRiwMPhhqDtOcFtAzXOGHow","authDomain":"file-sharing-app-f616d.firebaseapp.com","messagingSenderId":"942294062692","measurementId":"G-35KFM0WH03"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-04-03T19:28:16.202Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites/file-sharing-app-f616d [none]
+[debug] [2024-04-03T19:28:18.000Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites/file-sharing-app-f616d 200
+[debug] [2024-04-03T19:28:18.002Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites/file-sharing-app-f616d {"name":"projects/file-sharing-app-f616d/sites/file-sharing-app-f616d","defaultUrl":"https://file-sharing-app-f616d.web.app","appId":"1:942294062692:web:49527fe831cfa42fb5b171","type":"DEFAULT_SITE"}
+[info] You are using Node.js 18.5.0. For Next.js, Node.js version >= v18.17.0 is required.
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • middleware
+[info]  • Image Optimization
+[info]  • use of fallback /sign-in/[[...sign-in]]
+[info]  • non-static component /_not-found
+[info]  • non-static component /api/send/route
+[debug] [2024-04-03T19:28:20.253Z]  • non-static component /page
+[debug] [2024-04-03T19:28:20.254Z]  • non-static component /(dashboard)/(routes)/files/[fileId]/page
+[debug] [2024-04-03T19:28:20.254Z]  • non-static component /(dashboard)/(routes)/upload/page
+[debug] [2024-04-03T19:28:20.254Z]  • non-static component /(dashboard)/(routes)/viewfiles/page
+[debug] [2024-04-03T19:28:20.254Z]  • non-static component /(dashboard)/(routes)/file-preview/[fileId]/page
+[debug] [2024-04-03T19:28:20.254Z]  • non-static component /(dashboard)/(routes)/upgrade/page
+[info]  • and 6 other reasons, use --debug to see more
+[info] 
+[debug] [2024-04-03T19:28:27.840Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites/file-sharing-app-f616d [none]
+[debug] [2024-04-03T19:28:28.850Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites/file-sharing-app-f616d 200
+[debug] [2024-04-03T19:28:28.851Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/file-sharing-app-f616d/sites/file-sharing-app-f616d {"name":"projects/file-sharing-app-f616d/sites/file-sharing-app-f616d","defaultUrl":"https://file-sharing-app-f616d.web.app","appId":"1:942294062692:web:49527fe831cfa42fb5b171","type":"DEFAULT_SITE"}
+[debug] [2024-04-03T19:29:35.446Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:820:11)
+    at Object.execSync (node:child_process:891:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/Users/mishankkumar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:375:42)
+    at async deploy (/Users/mishankkumar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
