@@ -5,6 +5,7 @@ import { getFirestore, getDoc, doc } from 'firebase/firestore';
 import { app } from '../../../../../FirebaseConfig';
 import FileDisplayComponent from './_components/FileDisplayComponent';
 
+
 const FilePage = ({ params }) => {
   const db = getFirestore(app);
   const [fileInfo, setFileInfo] = useState(null);
