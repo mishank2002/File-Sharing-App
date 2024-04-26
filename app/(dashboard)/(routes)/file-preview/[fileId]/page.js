@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from 'react';
 import { getFirestore, updateDoc, getDoc, doc } from 'firebase/firestore';
 import { app } from '../../../../../FirebaseConfig';
-import ImageForm from './_components/imageForm';
+import ImageForm from './_components/ImageForm';
 
 function FilePreview({ params }) {
   const db = getFirestore(app);
