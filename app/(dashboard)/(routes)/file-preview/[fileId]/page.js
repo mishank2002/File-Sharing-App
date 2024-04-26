@@ -3,7 +3,7 @@
 // FilePreview.js
 import React, { useEffect, useState } from 'react';
 import { getFirestore, updateDoc, getDoc, doc } from 'firebase/firestore';
-import { app } from '../../../../../FirebaseConfig';
+import { app } from '../../../../../firebaseConfig';
 import ImageForm from './_components/ImageForm';
 
 function FilePreview({ params }) {

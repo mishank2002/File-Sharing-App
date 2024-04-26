@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { getFirestore, getDoc, doc } from 'firebase/firestore';
-import { app } from '../../../../../FirebaseConfig';
+import { app } from '../../../../../firebaseConfig';
 import FileDisplayComponent from './_components/FileDisplayComponent';
 
 
