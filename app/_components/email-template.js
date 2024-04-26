@@ -78,7 +78,7 @@ export const EmailTemplate = ({ response }) => {
             <Row style={{ ...boxInfos, paddingTop: "0" }}>
                 <Column style={containerLink} colSpan={2}>
                   <a
-                    href={`http://localhost:3000/files/${shortUrlSuffix}`}
+                    href={`https://file-app-ten.vercel.app/files/${shortUrlSuffix}`}
                     style={link}
                     target="_blank"
                     rel="noopener noreferrer"
