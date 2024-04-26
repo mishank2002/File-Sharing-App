@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import UploadForm from './_components/UploadForm';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { app } from '../../../../FirebaseConfig';
+import { app } from '../../../../firebaseConfig';
 import { getFirestore, setDoc, doc } from "firebase/firestore";
 import { useUser } from '@clerk/nextjs';
 import {generateRandomString} from '../../../_utils/generateRandomString'
