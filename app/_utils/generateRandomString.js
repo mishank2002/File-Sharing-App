@@ -7,6 +7,5 @@ export const generateRandomString = () => {
   for (let counter = 0; counter <length; counter++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
-
   return result;
 };

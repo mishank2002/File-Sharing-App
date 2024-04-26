@@ -11,7 +11,7 @@ function TopHeader() {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (sideNavRef.current && !sideNavRef.current.contains(event.target) && isActive) {
-                toggleSideNav(); // Close the sidebar when clicked outside of it
+                toggleSideNav(); 
             }
         };
 

@@ -1,17 +1,9 @@
 import { SignIn } from "@clerk/nextjs";
 import Image from "next/image";
-
-// Define the generateStaticParams function
-
-export async function generateStaticParams() {
-  // Return an empty array since there are no specific paths to pre-render
-  return [];
-}
-
-
-const SignInPage = () => {
+ 
+export default function Page() {
   return (
-    <section className="bg-white">
+<section className="bg-white">
   <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
     <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
       <img
@@ -75,7 +67,5 @@ const SignInPage = () => {
     </main>
   </div>
 </section>
-  );
-};
-
-export default SignInPage;
+  )
+}
